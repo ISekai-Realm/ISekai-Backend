@@ -1,6 +1,5 @@
 package net.biryeongtrain.isekaibackend.config;
 
-import com.google.gson.annotations.SerializedName;
 import net.biryeongtrain.isekaibackend.ISekai_Backend;
 import net.biryeongtrain.isekaibackend.protocol.ISekaiProtocolServerHandler;
 import net.biryeongtrain.isekaibackend.utils.BaseGson;
@@ -10,7 +9,6 @@ import org.apache.commons.io.IOUtils;
 import java.io.*;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Path;
-import java.nio.file.Paths;
 
 public class Config {
     public Path savePath = ISekaiProtocolServerHandler.server.getRunDirectory().toAbsolutePath().getParent();
