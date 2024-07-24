@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "isekai-backend",
+  "version": "${version}",
+
+  "name": "ISekai-Backend",
+  "description": "",
+  "authors": [],
+  "contact": {},
+
+  "license": "All-Rights-Reserved",
+  "icon": "assets/isekai-backend/icon.png",
+
+  "environment": "server",
+  "entrypoints": {
+    "main": [
+      "net.biryeongtrain.isekaibackend.ISekai_Backend"
+    ]
+  },
+
+      "mixins": [
+        "isekai-backend.mixins.json"
+      ],
+
+  "depends": {
+    "java": ">=21",
+    "fabric": "*",
+    "protoweaver": "*"
+  }
+}
